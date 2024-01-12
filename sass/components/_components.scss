@@ -1,0 +1,101 @@
+body {
+    margin-left: 128px;
+    background-color: $tertiary-color;
+    color: $neutral-color;
+}
+
+.header {
+    margin-top: 32px;
+    margin-bottom: 32px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: left;
+    margin-bottom: 32px;
+    button {
+        padding: 18px;
+        border: none;
+        border-radius: 100px;
+        border: 1px dotted $neutral-color;
+        background-color: transparent;
+        color: $neutral-color;
+    }
+}
+
+table {
+    background-color: $secondary-color;
+    padding: 12px;
+    width: 100%;
+    border-radius: 32px;
+    thead {
+        
+        tr {
+            th {
+                padding-top: 32px;
+                padding-bottom: 32px;
+                padding-left: auto;
+                padding-right: auto;
+                border-bottom: 1px dotted $primary-color;
+            }
+        }
+    }
+    tbody {
+        background-color: $secondary-color;
+        text-align: center;
+        tr {
+            td {
+                padding-top: 32px;
+                padding-bottom: 32px;
+                padding-left: auto;
+                padding-right: auto;
+                border-radius: 500px;
+                border: 1px dotted transparent;
+            }
+            td.active {
+                background-color: $primary-color;
+                border-radius: 500px;
+            }
+            td:hover{
+                border: 1px dotted $primary-color;
+                color: $primary-color;
+                border-radius: 500px;
+            }
+        }
+    }
+
+}
+
+nav {
+    position: fixed;
+    top: 256px;
+    left: 12px;
+    bottom: 0;
+    margin: 0;
+    padding: 0;
+    border-radius: 30px;
+    padding: 12px;
+    height: 300px;
+    background-color: $secondary-color;
+    ul {
+        margin: 0;
+        padding: 0;
+        li {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            a {
+                padding: 32px;
+                background-color: $secondary-color;
+                color: $primary-color;
+                span {
+                    margin-top: 24px;
+                    margin-bottom: 12px;
+                }
+                span:hover {
+                    border-bottom: 1px solid $primary-color;
+                }
+            }
+        }
+    }
+}
